@@ -1,0 +1,108 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    height: 552px;
+    width: 335px;
+    margin: 0 auto;
+
+}
+.divImg {
+    width: 335px;
+    height: 223px;
+    margin: 0 auto;
+}
+.divImg > img {
+    width: 335px;
+    height: 223px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.menuderoulant {
+    height: 138px;
+    width: 335px;
+    margin: 10px auto 0 auto;
+}
+
+.title {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(255, 96, 96, 1);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    position: relative;
+}
+.title > h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.arrow {
+    position: absolute;
+    width: 15px;
+    height: 24px;
+    top: 6px;
+    right: 24px;
+    cursor: pointer;
+}
+.description {
+    height: 0;
+    width: 335px;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto 20px auto;
+
+
+}
+.description > p {
+    padding: 5px 10px 5px 10px;
+
+}
+/* Pour grand écran ------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1000px) {
+
+
+    section {
+        height: auto;
+        width: 1240px;
+    }
+    .divImg {
+        width: 1240px;
+        margin-bottom: 20px;
+    }
+    .divImg > img {
+        width: 1240px;
+    }
+    .menuderoulant {
+        width: 1023px;
+        height: 175px;
+    }
+
+    .title {
+        height: 47px;
+    }
+    .title > h2 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    .arrow {
+        top: 15px;
+        right: 35px;
+    }
+    .description {
+        width: 1023px;
+        font-size: 24px;
+        height: 146px;
+        margin: 0 auto 20px auto;
+
+
+    }
+}

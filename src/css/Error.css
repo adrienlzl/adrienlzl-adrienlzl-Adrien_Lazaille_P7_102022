@@ -1,0 +1,86 @@
+
+.error {
+    height: 99px;
+    width: 198px;
+    margin: 150px auto 0 auto;
+}
+.error > h1 {
+    height: 99px;
+    width: 198px;
+    color: #FF6060;
+    font-size: 96px;
+    font-weight: 700;
+}
+.msgError {
+    height: 52px;
+    width: 260px;
+    margin: 25px auto;
+}
+.msgError > p {
+    color: #FF6060;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+}
+.linkHome {
+    width: 221px;
+    height: 20px;
+    margin: 100px auto;
+}
+.linkHome > a {
+    color: #FF6060;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* Pour grand écran ------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1000px) {
+
+
+    .error {
+        width: 597px;
+        height: 263px;
+        margin: 200px auto 0 auto;
+    }
+    .error > h1 {
+        width: 597px;
+        height: 263px;
+        font-weight: 700;
+        font-size: 288px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FF6060;
+    }
+    .msgError {
+        width: 872px;
+        height: 51px;
+        margin: 70px auto 0 auto;
+    }
+    .msgError > p {
+        width: 872px;
+        height: 51px;
+        color: #FF6060;
+        font-weight: 500;
+        font-size: 36px;
+        display: flex;
+        align-items: flex-end;
+    }
+    .linkHome {
+        width: 284px;
+        height: 26px;
+        margin: 150px auto;
+    }
+    .linkHome > a {
+        width: 284px;
+        height: 26px;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        align-items: flex-end;
+    }
+}
