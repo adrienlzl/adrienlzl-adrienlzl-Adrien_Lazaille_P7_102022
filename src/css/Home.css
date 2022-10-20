@@ -1,15 +1,15 @@
 
-.divImg {
+.divImgHome {
     height: 109px;
     width: 367px;
     border-radius: 15px;
     background-color: black;
     position: relative;
     z-index: 1;
-    margin: 10px auto;
+    margin: 10px auto 0 auto;
 
 }
-.divImg > img {
+.divImgHome > img {
     object-fit: cover;
     height: 109px;
     width: 367px;
@@ -20,7 +20,7 @@
     z-index: 2;
     opacity: 0.7;
 }
-.divImg > h1 {
+.divImgHome > h1 {
     position: absolute;
     color: white;
     bottom: 36%;
@@ -30,12 +30,12 @@
     z-index: 10;
     margin-inside: 0;
     margin: 0;
-    width: 217px;
+    width: 193px;
     height: 48px;
 }
 .sectionHome {
     height: auto;
-    margin: 30px 10px;
+    margin: 0 auto 50px auto;
     border-radius: 15px;
     display: grid;
     grid-template-rows: repeat(6, 255px);
@@ -44,17 +44,35 @@
     padding-top: 20px;
 }
 .sectionHome > figure {
-    position: relative;
-    Width: 367px;
-    Height: 255px;
+    overflow: hidden;
     border-radius: 10px;
-    background: linear-gradient(180deg, #FF6060 0%, rgb(120, 50, 50) 150%);
+    justify-self: center;
+    position: relative;
+}
+.sectionHome > figure::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    display: block;
+    opacity: 0.4;
+    background:  linear-gradient(to top, black 0%, transparent 50%) ;
+}
+figcaption {
+    position: absolute;
+    z-index: 1500;
+    padding: 10px;
+    bottom: 0;
+    box-sizing: border-box;
+
 }
 figure > img {
-    Width: 367px;
-    Height: 255px;
+    Height: 100%;
     border-radius: 10px;
 }
+
 figcaption > h2 {
     color: white;
     justify-self: start;
@@ -64,6 +82,7 @@ figcaption > h2 {
     width: 22%;
     font-size: 16px;
     margin: 17px;
+    width: 1000%;
 }
 
 
@@ -72,7 +91,7 @@ figcaption > h2 {
 
 @media screen and (min-width: 1000px) {
 
-    .divImg {
+    .divImgHome {
         margin: 40px auto;
         height: 222px;
         width: 1239px;
@@ -81,7 +100,7 @@ figcaption > h2 {
         position: relative;
         z-index: 1;
     }
-    .divImg > h1 {
+    .divImgHome > h1 {
         position: absolute;
         color: white;
         bottom: 33%;
@@ -92,7 +111,7 @@ figcaption > h2 {
         height: 68px;
         width: 705px;
     }
-    .divImg > img {
+    .divImgHome > img {
         height: 223px;
         width: 1240px;
         border-radius: 25px;
@@ -100,8 +119,6 @@ figcaption > h2 {
         z-index: 2;
     }
     .sectionHome {
-        height: 830px;
-        width: 1240px;
         margin: 0 auto;
         border-radius: 25px;
         background: #F7F7F7;
@@ -112,19 +129,18 @@ figcaption > h2 {
         padding: 38px 30px;
     }
     .sectionHome > figure {
-        Width: 340px;
         Height: 340px;
+        overflow: hidden;
         border-radius: 10px;
-        background: linear-gradient(180deg, #FF6060 0%, #da5959 100%);
+        justify-self: center;
+        position: relative;
     }
-    figure > img {
-        Width: 340px;
-        Height: 340px;
-        border-radius: 10px;
-    }
+
+
     figcaption > h2 {
         color: white;
         justify-self: start;
         align-self: end;
     }
+
 }

@@ -7,24 +7,24 @@ section {
     margin: 0 auto;
 
 }
-.divImg {
+.divImgAbout {
     width: 335px;
     height: 223px;
     margin: 0 auto;
 }
-.divImg > img {
+.divImgAbout > img {
     width: 335px;
     height: 223px;
     object-fit: cover;
     border-radius: 10px;
 }
-.menuderoulant {
+.aboutMenu {
     height: 138px;
     width: 335px;
     margin: 10px auto 0 auto;
 }
 
-.title {
+.titleAbout {
     font-size: 13px;
     font-weight: 500;
     background-color: rgba(255, 96, 96, 1);
@@ -33,14 +33,14 @@ section {
     height: 30px;
     position: relative;
 }
-.title > h2 {
+.titleAbout > h2 {
     font-size: 13px;
     font-weight: 500;
     margin-left: 10px;
     padding-top: 5px;
     cursor: pointer;
 }
-.arrow {
+.arrowAbout {
     position: absolute;
     width: 15px;
     height: 24px;
@@ -48,21 +48,20 @@ section {
     right: 24px;
     cursor: pointer;
 }
-.description {
-    height: 0;
+.descriptionAbout {
+    height: auto;
     width: 335px;
     border-radius: 5px;
     background-color: #F7F7F7;
     color: #FF6060;
     font-weight: 400;
     font-size: 12px;
-    margin: 0 auto 20px auto;
-
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
 
 }
-.description > p {
+.descriptionAbout > p {
     padding: 5px 10px 5px 10px;
-
 }
 /* Pour grand écran ------------------------------------------------------------------------------------- */
 
@@ -74,35 +73,35 @@ section {
         height: auto;
         width: 1240px;
     }
-    .divImg {
+    .divImgAbout {
         width: 1240px;
         margin-bottom: 20px;
     }
-    .divImg > img {
+    .divImgAbout > img {
         width: 1240px;
     }
-    .menuderoulant {
+    .aboutMenu {
         width: 1023px;
         height: 175px;
     }
 
-    .title {
+    .titleAbout {
         height: 47px;
+        margin-top: 10px;
     }
-    .title > h2 {
+    .titleAbout > h2 {
         font-size: 24px;
         margin-left: 20px;
     }
-    .arrow {
+    .arrowAbout {
         top: 15px;
         right: 35px;
     }
-    .description {
-        width: 1023px;
+    .descriptionAbout {
+        width: 100%;
         font-size: 24px;
-        height: 146px;
-        margin: 0 auto 20px auto;
-
-
+        height: auto;
+        margin: -8px auto 0 auto;
+        padding: 15px 10px 3px 10px;
     }
 }

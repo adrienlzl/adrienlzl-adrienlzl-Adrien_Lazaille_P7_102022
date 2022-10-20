@@ -1,0 +1,34 @@
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 209px;
+}
+.footerlogo {
+    margin: 0 auto 20px auto;
+    padding-top: 70px;
+    width: 122px;
+    height: 40px;
+    background-color: black;
+}
+.footercopyright {
+    font-weight: 500;
+    color: white;
+    font-size: 12px;
+    margin: 70px auto;
+    width: 198px;
+}
+/* Pour grand écran ------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1000px) {
+
+    footer{
+        height: 250px;
+    }
+    .footercopyright {
+        font-size: 24px;
+        width: 396px;
+        margin-top: 90px;
+    }
+}

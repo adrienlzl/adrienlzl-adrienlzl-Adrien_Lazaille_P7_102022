@@ -1,0 +1,82 @@
+
+header {
+    color: #FF6060;
+    height: 68px;
+    display: grid;
+    grid-template-rows: 68px;
+    grid-template-columns: 50% 50%;
+    margin: 10px auto;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    grid-column: 1 / 2 ;
+    place-self: center;
+    width: 145px;
+    align-self: stretch;
+}
+.divNavLink {
+    grid-column: 2 /3;
+    place-self: center;
+    width: 140px;
+
+}
+.navLink {
+    color: #FF6060;
+    height: 34px;
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+    justify-self: end;
+    align-self: center;
+}
+
+/* Pour grand écran ------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1000px) {
+
+    /* Header ------------------------------------------------------------------------------------------------ */
+    header {
+        color: #FF6060;
+        height: 68px;
+        margin: 20px auto;
+        display: grid;
+        width: 1240px;
+        grid-template-rows: 68px;
+        grid-template-columns: 25% 45% 30%;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        height: 48px;
+        grid-column: 1 / 2;
+        place-self: center;
+        font-size: 65px;
+        font-weight: 500;
+    }
+
+    .divNavLink {
+        display: grid;
+        grid-column: 3 /4;
+        place-self: center;
+        grid-template-columns: 50% 50%;
+        height: 34px;
+        width: 309px;
+
+    }
+
+    .navLink {
+        color: #FF6060;
+        height: 34px;
+        width: 116px;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        margin: 0 15px;
+
+    }
+}

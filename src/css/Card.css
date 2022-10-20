@@ -1,32 +1,42 @@
+/*---------------------------- Top part -------------------------------------------------- */
+
+.fristSectionCard {
+    margin: 10px auto;
+    height: auto;
+}
 .divImgCard {
     width: 335px;
     height: 225px;
     margin: 20px auto;
     position: relative;
+    background-color: black;
+    border-radius: 10px;
 }
 .divImgCard > img {
     width: 335px;
     height: 225px;
     border-radius: 10px;
     object-fit: cover;
+    opacity: 0.9;
 }
-.divImgCard > p {
-    width: 12px;
-    height: 20px;
-    color: white;
-    font-size: 40px;
+.arrowRightCard, .arrowLeftCard {
+    width: 24px;
+    height: 24px;
 }
-.arrowright {
+.arrowRightCard {
     position: absolute;
-    top: 80px;
-    right: 10px;
+    top: 97px;
+    right: 5px;
 }
-.arrowleft {
+.arrowLeftCard {
     position: absolute;
-    top: 80px;
-    left: 0px;
+    top: 102px;
+    left: 5px;
 }
-.leftInfo > h2 {
+.leftInfoCard {
+    height: auto;
+}
+.leftInfoCard > h2 {
     width: 335px;
     margin: 5px auto 0 auto;
     color: #FF6060;
@@ -35,7 +45,7 @@
     display: flex;
     align-items: flex-end;
 }
-.leftInfo > p {
+.leftInfoCard > p {
     width: 323px;
     height: 22px;
     margin: 7px auto;
@@ -45,13 +55,13 @@
     display: flex;
     align-items: flex-end;
 }
-.btnDescription {
+.btnDescriptionCard {
     display: flex;
     flex-direction: row;
     width: 335px;
     margin: 0 auto;
 }
-.btnDescription > p {
+.btnDescriptionCard > p {
     width: 84px;
     height: 18px;
     border-radius: 5px;
@@ -62,7 +72,7 @@
     text-align: center;
     margin-right: 10px;
 }
-.rightInfo {
+.rightInfoCard {
     width: 335px;
     margin: 15px auto;
     display: flex;
@@ -71,11 +81,11 @@
     position: relative;
 
 }
-.NamePhoto {
+.NamePhotoCard {
     display: flex;
     flex-direction: row;
 }
-.NamePhoto > p {
+.NamePhotoCard > p {
     width: 93px;
     height: 33px;
     font-size: 12px;
@@ -84,7 +94,7 @@
     color: #FF6060;
 
 }
-.cercle {
+.cercleCard {
     height: 32px;
     width: 32px;
     background-color: #C4C4C4;
@@ -92,35 +102,67 @@
     border-radius: 50%;
     margin: 0 0 0 10px;
 }
-.menuderoulant {
+
+/*--------------------------------------------- Bottom part -------------------------------------------------*/
+
+
+.menuderoulantCard {
     width: 335px;
-    height: 30px;
+    height: auto;
     border-radius: 5px;
-    background-color: #FF6060;
-    color: white;
 }
-.menuderoulant > h3 {
+.titleCard {
     font-size: 13px;
     font-weight: 500;
+    background-color: #FF6060;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    position: relative;
 }
-.under {
+.fristArrowCard {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+.titleCard > h3 {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px;
+}
+.underCard {
     width: 335px;
-    height: 143px;
+    height: auto;
     margin: 0 auto;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    border-radius: 10px;
 }
+.underCard > p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 7px;
+    margin-top: -3px;
+}
+.underCard > ul {
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 7px;
+    margin-top: -3px;
 
-
-
-
+}
 /* Pour grand écran ------------------------------------------------------------------------------------- */
 
 
 @media screen and (min-width: 1000px) {
 
-
+    /*---------------------------- Top part -------------------------------------------------- */
     .divImgCard {
-        width: 1240px;
-        height: 415px;
+        width: 1239px;
+        height: 414px;
         border-radius: 25px;
         margin: 15px auto;
     }
@@ -128,61 +170,63 @@
         width: 1240px;
         height: 415px;
         border-radius: 25px;
-        margin: 15px auto;
+        margin: 0 auto;
     }
-    .divImgCard > p {
-        font-size: 100px;
+    .arrowLeftCard, .arrowRightCard{
+        width: 47px;
+        height: 79px;
     }
-    .arrowright {
-        top: 30%;
-        right: 42px;
+    .arrowRightCard {
+        top: 135px;
+        right: 23px;
     }
-    .arrowleft {
-        top: 30%;
+    .arrowLeftCard {
+        top: 135px;
+        left: 23px;
     }
-    .fristSection {
+    .fristSectionCard {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 1240px;
         margin: 20px auto;
     }
-    .leftInfo {
+    .leftInfoCard {
         display: block;
     }
-    .leftInfo > h2 {
+    .leftInfoCard > h2 {
         width: 653px;
         height: 51px;
         font-size: 36px;
         line-height: 51px;
         margin-top: 0;
     }
-    .leftInfo > p {
+    .leftInfoCard > p {
         width: 176px;
         height: 26px;
         font-size: 18px;
         line-height: 25px;
         margin: 0 0;
     }
-    .rightInfo {
+    .rightInfoCard {
         display: block;
         margin: 0;
         position: relative;
     }
-    .btnDescription {
+    .btnDescriptionCard {
         margin: 15px 0;
     }
-    .btnDescription > p {
+    .btnDescriptionCard > p {
         height: 25px;
         width: 115px;
         border-radius: 10px;
         text-align: center;
     }
-    .cercle {
+    .cercleCard {
         width: 64px;
         height: 64px;
     }
-    .NamePhoto > p {
+    .NamePhotoCard > p {
         font-weight: 500;
         font-size: 18px;
         width: 93px;
@@ -191,31 +235,31 @@
         align-items: flex-end;
         text-align: right;
     }
-    .stars {
+    .starsCard {
         display: flex;
         width: 30px;
         height: 30px;
     }
-    .stars > i {
+    .starsCard > i {
         margin: 0 7px;
     }
-    .secondSection {
+    .secondSectionCard {
         width: 1240px;
         height: 280px;
         margin: 10px auto;
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .menuderoulant {
+    .menuderoulantCard {
         width: 582px;
         height: 52px;
         border-radius: 10px;
     }
-    .menuderoulant > h3 {
+    .menuderoulantCard > h3 {
         font-size: 18px;
         font-weight: 500;
     }
-    .under {
+    .underCard {
         height: 249px;
         width: 582px;
         border-radius: 10px;

@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Card from "./pages/Card";
 
 
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<RouteLayout />}>
