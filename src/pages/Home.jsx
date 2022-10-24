@@ -4,10 +4,6 @@ import Footer from "../components/Footer";
 
 function Home()  {
 
-
-
-
-
     return (
         <main className="mainHome">
             <header className="divImgHome">

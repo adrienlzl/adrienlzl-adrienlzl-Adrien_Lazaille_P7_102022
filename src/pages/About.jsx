@@ -1,14 +1,34 @@
 import React from 'react';
+import {useState} from "react";
+import Footer from "../components/Footer";
 
 function About()  {
+
+    const [isShown, setIsShown] = useState(false);
+    const contentHidden = event => {
+        setIsShown(current => !current);
+    };
+    const [isShown01, setIsShown01] = useState(false);
+    const contentHidden01 = event => {
+        setIsShown01(current => !current);
+    };
+    const [isShown02, setIsShown02] = useState(false);
+    const contentHidden02 = event => {
+        setIsShown02(current => !current);
+    };
+    const [isShown03, setIsShown03] = useState(false);
+    const contentHidden03 = event => {
+        setIsShown03(current => !current);
+    };
+
     return (
         <main>
             <div className="divImgAbout">
                 <img src="/images/imgABout.png" alt="Montagnes enneigées"/>
             </div>
             <section>
-                <div className="aboutMenu">
-                    <div className="titleAbout">
+                <div className="aboutMenu" onClick={contentHidden}>
+                    <div className="titleAbout" >
                         <h2>Fiabilité</h2>
                         <div className="arrowAbout">
                             <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -16,13 +36,16 @@ function About()  {
                             </svg>
                         </div>
                     </div>
-                    <div className="descriptionAbout">
-                        <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes
-                            aux
-                            logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
-                    </div>
+                    {isShown &&(
+                        <div className="descriptionAbout">
+                            <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes
+                                aux
+                                logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
+                        </div>
+                    )}
+
                 </div>
-                <div className="aboutMenu">
+                <div className="aboutMenu" onClick={contentHidden01}>
                     <div className="titleAbout">
                         <h2>Respect</h2>
                         <div className="arrowAbout">
@@ -31,13 +54,16 @@ function About()  {
                             </svg>
                         </div>
                     </div>
-                    <div className="descriptionAbout">
-                        <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement
-                            discriminatoire ou de
-                            perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
-                    </div>
+                    {isShown01 &&(
+                        <div className="descriptionAbout">
+                            <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement
+                                discriminatoire ou de
+                                perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
+                        </div>
+                    )}
+
                 </div>
-                <div className="aboutMenu">
+                <div className="aboutMenu" onClick={contentHidden02}>
                     <div className="titleAbout">
                         <h2>Service</h2>
                         <div className="arrowAbout">
@@ -46,13 +72,15 @@ function About()  {
                             </svg>
                         </div>
                     </div>
-                    <div className="descriptionAbout">
+                    {isShown02 &&(
+                        <div className="descriptionAbout">
                         <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite.
-                            N'hésitez pas
-                            à nous contacter si vous avez la moindre question.</p>
-                    </div>
+                        N'hésitez pas
+                        à nous contacter si vous avez la moindre question.</p>
+                        </div>
+                        )}
                 </div>
-                <div className="aboutMenu">
+                <div className="aboutMenu" onClick={contentHidden03}>
                     <div className="titleAbout">
                         <h2>Sécurité</h2>
                         <div className="arrowAbout">
@@ -61,17 +89,18 @@ function About()  {
                             </svg>
                         </div>
                     </div>
-                    <div className="descriptionAbout">
+                    {isShown03 &&(<div className="descriptionAbout">
                         <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque
-                            logement correspond aux critères de sécurité établis par nos services. En laissant une note
-                            aussi
-                            bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont
-                            bien
-                            respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos
-                            hôtes.</p>
-                    </div>
+                        logement correspond aux critères de sécurité établis par nos services. En laissant une note
+                        aussi
+                        bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont
+                        bien
+                        respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos
+                        hôtes.</p>
+                        </div>)}
                 </div>
             </section>
+            <Footer />
         </main>
 
     );

@@ -1,0 +1,40 @@
+.nouveaumenu {
+    height: 138px;
+    width: 335px;
+    margin: 10px auto 0 auto;
+}
+.tileandarrow {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(255, 96, 96, 1);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    position: relative;
+}
+.tileandarrow > h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.tileandarrow > svg {
+    position: absolute;
+    width: 15px;
+    height: 24px;
+    top: 6px;
+    right: 24px;
+    cursor: pointer;
+}
+.textedumenu {
+    height: auto;
+    width: 335px;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+}

@@ -4,17 +4,19 @@ import datas from './Data.json'
 
 
 function HomeDatas() {
+
+
     const dataJson = datas.map(data =>
         <>
-            <figure key={data.id}>
+            <figure key={data.id} onClick={() => window.location.href = `/card/${data.id}`}>
                 <img src={data.cover} alt={data.title} />
-
             <figcaption>
                 <h2>{data.title}</h2>
             </figcaption>
             </figure>
         </>
     )
+
     return (
         <>
             {dataJson}
@@ -23,3 +25,4 @@ function HomeDatas() {
 }
 
 export default HomeDatas
+

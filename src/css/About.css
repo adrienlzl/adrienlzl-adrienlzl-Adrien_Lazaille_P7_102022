@@ -2,9 +2,9 @@
 section {
     display: flex;
     flex-direction: column;
-    height: 552px;
+    height: auto;
     width: 335px;
-    margin: 0 auto;
+    margin: 0 auto 100px auto;
 
 }
 .divImgAbout {
@@ -19,10 +19,11 @@ section {
     border-radius: 10px;
 }
 .aboutMenu {
-    height: 138px;
     width: 335px;
+    height: auto;
     margin: 10px auto 0 auto;
 }
+
 
 .titleAbout {
     font-size: 13px;
@@ -44,12 +45,13 @@ section {
     position: absolute;
     width: 15px;
     height: 24px;
-    top: 6px;
-    right: 24px;
+    top: 0;
+    right: 12px;
     cursor: pointer;
+    transform: rotate(180deg);
+
 }
 .descriptionAbout {
-    height: auto;
     width: 335px;
     border-radius: 5px;
     background-color: #F7F7F7;
@@ -72,6 +74,7 @@ section {
     section {
         height: auto;
         width: 1240px;
+        margin-bottom: 100px;
     }
     .divImgAbout {
         width: 1240px;
@@ -82,7 +85,7 @@ section {
     }
     .aboutMenu {
         width: 1023px;
-        height: 175px;
+        height: auto;
     }
 
     .titleAbout {

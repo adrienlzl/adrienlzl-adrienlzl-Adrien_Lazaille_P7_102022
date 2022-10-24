@@ -8,15 +8,16 @@ import RouteLayout from "./pages/RouteLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Card from "./pages/Card";
+import Error from "./pages/Error";
 
 
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<RouteLayout />}>
+        <Route path="/" element={<RouteLayout />} errorElement={<Error/>}>
           <Route index element={<Home />}/>
           <Route path='/about' element={<About />}/>
-          <Route path='/card' element={<Card />}/>
+          <Route path='/card/:id' element={<Card />}/>
         </Route>
     ));
 
