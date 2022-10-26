@@ -1,25 +1,15 @@
 import React from "react";
-import datas from './Data.json'
 
-
-
-function HomeDatas() {
-
-
-    const dataJson = datas.map(data =>
-        <>
-            <figure key={data.id} onClick={() => window.location.href = `/card/${data.id}`}>
-                <img src={data.cover} alt={data.title} />
-            <figcaption>
-                <h2>{data.title}</h2>
-            </figcaption>
-            </figure>
-        </>
-    )
-
+function HomeDatas(props) {
+    console.log(props)
     return (
         <>
-            {dataJson}
+            <figure key={props.data.id} onClick={() => window.location.href = `/card/${props.data.id}`}>
+                <img src={props.data.cover} alt={props.data.title} />
+                <figcaption>
+                    <h2>{props.data.title}</h2>
+                </figcaption>
+            </figure>
         </>
     )
 }

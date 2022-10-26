@@ -1,19 +1,23 @@
 import React from 'react';
 import HomeDatas from "../components/HomeDatas";
 import Footer from "../components/Footer";
+import datas from "../components/Data.json";
 
-function Home()  {
+function Home() {
+
 
     return (
         <main className="mainHome">
             <header className="divImgHome">
                 <h1>Chez vous, partout et ailleurs</h1>
-                <img src="/images/imageHome.png" alt="home Kasa" />
+                <img src="/images/imageHome.png" alt="home Kasa"/>
             </header>
             <section className="sectionHome">
-                <HomeDatas/>
+                {datas.map(data => (
+                    <HomeDatas data={data} />
+                ))}
             </section>
-            <Footer />
+            <Footer/>
         </main>
     );
 };

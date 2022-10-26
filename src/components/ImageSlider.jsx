@@ -3,13 +3,10 @@ import React, {useState } from "react";
 
 
 
-function ImageSlider ({ sildes })  {
-    const [currentIdex, setCurrentIndex] = useState(0);
+const ImageSlider = (props) => {
     return (
         <>
-            <div style={{backgroundImage: `url(${slides[currentIndex].url})`}}>
-
-            </div>
+            <img src={props.data} alt="vue interne" />
         </>
     )
 }
