@@ -7,7 +7,7 @@ import RouteLayout from "./pages/RouteLayout";
 //Pages du site
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Card from "./pages/Card";
+import Flat from "./pages/Flat";
 import Error from "./pages/Error";
 
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<RouteLayout />} >
           <Route index element={<Home />}/>
           <Route path='/about' element={<About />}/>
-          <Route path='/card/:id' element={<Card />}/>
+          <Route path='/card/:id' element={<Flat />}/>
         </Route>
     ));
 

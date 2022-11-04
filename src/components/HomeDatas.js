@@ -1,7 +1,6 @@
 import React from "react";
 
 function HomeDatas(props) {
-    console.log(props)
     return (
         <>
             <figure key={props.data.id} onClick={() => window.location.href = `/card/${props.data.id}`}>

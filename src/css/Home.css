@@ -37,16 +37,17 @@
     height: auto;
     margin: 0 auto 50px auto;
     border-radius: 15px;
-    grid-gap: 30px;
     justify-content: space-around;
     padding-top: 20px;
-    width: 367px;
+    width: 330px;
 }
 .sectionHome > figure {
     overflow: hidden;
     border-radius: 10px;
     justify-self: center;
     position: relative;
+    margin-bottom: 20px;
+    height: 225px;
 }
 .sectionHome > figure::before {
     content: "";

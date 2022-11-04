@@ -1,47 +1,14 @@
 /*---------------------------- Top part -------------------------------------------------- */
 
-.fristSectionCard {
+.flatInfos {
     margin: 10px auto;
     height: auto;
 }
-.divSilder {
-    width: 335px;
-    height: 225px;
-    margin: 20px auto;
-    position: relative;
-    background-color: black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.divSilder > img {
-    width: 335px;
-    height: 225px;
-    border-radius: 10px;
-    object-fit: cover;
-    opacity: 0.9;
-}
-.arrowRightCard, .arrowLeftCard {
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    user-select: none;
-}
-.arrowRightCard {
-    position: absolute;
-    top: 97px;
-    right: 5px;
-}
-.arrowLeftCard {
-    position: absolute;
-    top: 102px;
-    left: 5px;
-}
-.leftInfoCard {
+
+.textInfosFlat {
     height: auto;
 }
-.leftInfoCard > h2 {
+.textInfosFlat > h2 {
     width: 335px;
     margin: 5px auto 0 auto;
     color: #FF6060;
@@ -50,7 +17,7 @@
     display: flex;
     align-items: flex-end;
 }
-.leftInfoCard > p {
+.textInfosFlat > p {
     width: 323px;
     height: 22px;
     margin: 7px auto;
@@ -60,13 +27,13 @@
     display: flex;
     align-items: flex-end;
 }
-.btnDescriptionCard {
+.tagFlat {
     display: flex;
     flex-direction: row;
     width: 335px;
     margin: 0 auto;
 }
-.btnDescriptionCard > p {
+.tagFlat > p {
     width: 84px;
     height: 18px;
     border-radius: 5px;
@@ -77,7 +44,7 @@
     text-align: center;
     margin-right: 10px;
 }
-.rightInfoCard {
+.hostInfo {
     width: 335px;
     margin: 15px auto;
     display: flex;
@@ -87,11 +54,11 @@
     align-items: center;
 
 }
-.NamePhotoCard {
+.hostName {
     display: flex;
     flex-direction: row;
 }
-.NamePhotoCard > p {
+.hostName > p {
     width: 60px;
     height: 33px;
     font-size: 12px;
@@ -100,7 +67,7 @@
     color: #FF6060;
 
 }
-.cercleCard > img {
+.hostPicture > img {
     height: 32px;
     width: 32px;
     background-color: #C4C4C4;
@@ -109,23 +76,24 @@
     margin: 0 0 0 10px;
     object-fit: cover;
 }
-.starsCard > svg {
+.ratingStars > svg {
     height: 18px;
     width: 18px;
 }
 
 /*--------------------------------------------- Bottom part -------------------------------------------------*/
-.secondSectionCard {
+.descriptionStuff {
     height: auto;
     margin-bottom: 100px;
 }
 
-.menuderoulantCard {
+.hideInfoFlat {
     width: 335px;
     height: auto;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
-.titleCard {
+.titleDescriptionStuff {
     font-size: 13px;
     font-weight: 500;
     background-color: #FF6060;
@@ -141,7 +109,7 @@
     top: 6px;
     right: 10px;
 }
-.titleCard > h3 {
+.titleDescriptionStuff > h3 {
     font-size: 13px;
     font-weight: 500;
     padding: 7px;
@@ -174,78 +142,55 @@
 @media screen and (min-width: 1000px) {
 
     /*---------------------------- Top part -------------------------------------------------- */
-    .divSilder {
-        width: 1238px;
-        height: 413px;
-        border-radius: 25px;
-        margin: 15px auto;
-    }
-    .divSilder > img {
-        width: 1240px;
-        height: 415px;
-        border-radius: 25px;
-        margin: 0 auto;
-    }
-    .arrowLeftCard, .arrowRightCard{
-        width: 47px;
-        height: 79px;
-    }
-    .arrowRightCard {
-        top: 170px;
-        right: 23px;
-    }
-    .arrowLeftCard {
-        top: 170px;
-        left: 23px;
-    }
-    .fristSectionCard {
+
+    .flatInfos {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 1240px;
         margin: 20px auto;
     }
-    .leftInfoCard {
+    .textInfosFlat {
         display: block;
     }
-    .leftInfoCard > h2 {
-        width: 653px;
+    .textInfosFlat > h2 {
+        width: auto;
         height: 51px;
         font-size: 36px;
         line-height: 51px;
         margin-top: 0;
     }
-    .leftInfoCard > p {
+    .textInfosFlat > p {
         width: auto;
         height: 26px;
         font-size: 18px;
         line-height: 25px;
         margin: 0 0;
     }
-    .rightInfoCard {
+    .hostInfo {
         display: block;
         margin: 0;
         position: relative;
     }
-    .btnDescriptionCard {
+    .tagFlat {
         margin: 25px 0 15px 0;
     }
-    .btnDescriptionCard > p {
+    .tagFlat > p {
         height: 25px;
         width: 115px;
         border-radius: 10px;
         text-align: center;
     }
-    .cercleCard > img {
+    .hostPicture > img {
         width: 64px;
         height: 64px;
     }
-    .NamePhotoCard {
+    .hostName {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
     }
-    .NamePhotoCard > p {
+    .hostName > p {
         font-weight: 500;
         font-size: 18px;
         width: 93px;
@@ -254,30 +199,31 @@
         align-items: flex-end;
         text-align: right;
     }
-    .starsCard {
+    .ratingStars {
         display: flex;
         justify-content: flex-end;
+        margin: 20px 0;
     }
-    .starsCard > svg {
+    .ratingStars > svg {
         width: 30px;
         height: 30px;
     }
-    .starsCard > i {
+    .ratingStars > i {
         margin: 0 7px;
     }
-    .secondSectionCard {
+    .descriptionStuff {
         width: 1240px;
         height: 280px;
         margin: 25px auto 50px auto;
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    .menuderoulantCard {
+    .hideInfoFlat {
         width: 582px;
         height: 52px;
         border-radius: 10px;
     }
-    .menuderoulantCard > h3 {
+    .hideInfoFlat > h3 {
         font-size: 18px;
         font-weight: 500;
     }

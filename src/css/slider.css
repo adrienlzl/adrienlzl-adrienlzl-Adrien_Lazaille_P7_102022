@@ -1,0 +1,82 @@
+.sliderPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 10px;
+    background-color: black;
+    width: 335px;
+    height: 225px;
+
+}
+.images {
+    width: 335px;
+    height: 225px;
+    object-fit: cover;
+}
+.slide {
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+.arrowRightCard, .arrowLeftCard {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+}
+.arrowRightCard {
+    position: absolute;
+    top: 97px;
+    right: 5px;
+}
+.arrowLeftCard {
+    position: absolute;
+    top: 102px;
+    left: 5px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .sliderPicture {
+        width: 1238px;
+        height: 413px;
+        border-radius: 25px;
+        margin: 15px auto;
+    }
+    .images {
+        width: 1240px;
+        height: 415px;
+        border-radius: 25px;
+        margin: 0 auto;
+    }
+    .arrowLeftCard, .arrowRightCard{
+        width: 47px;
+        height: 79px;
+    }
+    .arrowRightCard {
+        top: 170px;
+        right: 23px;
+    }
+    .arrowLeftCard {
+        top: 170px;
+        left: 23px;
+    }
+
+
+}
