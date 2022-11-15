@@ -1,11 +1,4 @@
 
-section {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 335px;
-    margin: 0 auto 100px auto;
-}
 .divImgAbout {
     width: 335px;
     height: 223px;
@@ -17,70 +10,13 @@ section {
     object-fit: cover;
     border-radius: 10px;
 }
-.aboutMenu {
-    width: 335px;
-    height: auto;
-    margin: 10px auto 0 auto;
-}
-.titleAbout {
-    font-size: 13px;
-    font-weight: 500;
-    background-color: rgba(255, 96, 96, 1);
-    border-radius: 5px;
-    color: white;
-    height: 30px;
-    position: relative;
-}
-.titleAbout > h2 {
-    font-size: 13px;
-    font-weight: 500;
-    margin-left: 10px;
-    padding-top: 5px;
-    cursor: pointer;
-}
-.arrowAbout {
-    position: absolute;
-    top: 0;
-    right: 12px;
-    cursor: pointer;
-}
-.arrowAbout > svg {
-    width: 19px;
-    height: 24px;
-    transition: transform 1s;
-}
-.descriptionAbout {
-    width: 335px;
-    border-radius: 5px;
-    background-color: #F7F7F7;
-    color: #FF6060;
-    font-weight: 400;
-    font-size: 12px;
-    margin: 0 auto;
-    padding: 5px 0 5px 0;
-}
-.descriptionAbout > p {
-    padding: 5px 10px 5px 10px;
-}
-/* Animations ------------------------------------------------------------------------------------------------- */
-.arrowAboutTurn > svg {
-    transform: rotate(180deg);
-    transition: transform 1s;
-}
-.descriptionAboutTrun > p {
-    transition: transform 1s;
-}
+
 /* Pour grand écran ------------------------------------------------------------------------------------- */
 
 
 @media screen and (min-width: 1000px) {
 
 
-    section {
-        height: auto;
-        width: 1240px;
-        margin-bottom: 100px;
-    }
     .divImgAbout {
         width: 1240px;
         margin-bottom: 20px;
@@ -88,31 +24,5 @@ section {
     .divImgAbout > img {
         width: 1240px;
     }
-    .aboutMenu {
-        width: 1023px;
-        height: auto;
-    }
-    .titleAbout {
-        height: 47px;
-        margin-top: 10px;
-    }
-    .titleAbout > h2 {
-        font-size: 24px;
-        margin-left: 20px;
-    }
-    .arrowAbout {
-        top: 10px;
-        right: 39px;
-    }
-    .arrowAbout > svg{
-        width: 23px;
-        height: 28px;
-    }
-    .descriptionAbout {
-        width: 100%;
-        font-size: 24px;
-        height: auto;
-        margin: -8px auto 0 auto;
-        padding: 15px 10px 3px 10px;
-    }
+
 }

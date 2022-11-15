@@ -1,0 +1,170 @@
+/* Page About------------------------------------------------------------------------------------------------ */
+
+.aboutCollapse > main {
+    width: 335px;
+    height: auto;
+    margin: 10px auto 25px auto;
+    position: relative;
+}
+.aboutCollapse > main > section {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgba(255, 96, 96, 1);
+    border-radius: 5px;
+    color: white;
+    height: 30px;
+    margin: 10px auto 0 auto;
+
+}
+.aboutCollapse > main > section > h2 {
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+.aboutCollapse > main > div {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    cursor: pointer;
+}
+.aboutCollapse > main > div > svg {
+    width: 19px;
+    height: 24px;
+    transition: transform 0.4s;
+}
+.aboutCollapse > main > article {
+    width: 335px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+}
+.aboutCollapse > main > article > ul > li {
+    padding: 5px 10px 5px 10px;
+}
+/* Page Flat ----------------------------------------------------------------------------------------------- */
+.flatCollapse {
+    height: auto;
+    width: 335px;
+    margin: 0 auto 0 auto;
+}
+.flatCollapse > main {
+    width: 335px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.flatCollapse > main > section {
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #FF6060;
+    height: 30px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto 30px auto;
+}
+.flatCollapse > main > div > svg {
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    cursor: pointer;
+    top: 6px;
+    right: 15px;
+    transition: transform 0.4s;
+}
+.flatCollapse > main > section > h2 {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px;
+    margin-left: 5px;
+}
+.flatCollapse > main > article {
+    width: 335px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    color: #FF6060;
+    border-radius: 10px;
+}
+.flatCollapse > main > article > ul > li {
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 15px 7px;
+    margin-top: -30px;
+}
+
+
+/* Animations --------------------------------------------------------------------------------------------- */
+.arrowCollapseTurn > svg {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-out;
+}
+.descriptionCollapse {
+    transition: transform 0.4s;
+}
+.descriptionCollapseTurn  {
+    transition: transform 0.4s ease-out;
+
+}
+/* Pour grand écran ------------------------------------------------------------------------------------- */
+
+
+@media screen and (min-width: 1000px) {
+    .aboutCollapse > main {
+        width: 1023px;
+        height: auto;
+    }
+    .aboutCollapse > main > section {
+        height: 47px;
+        margin: 10px auto 0 auto;
+    }
+    .aboutCollapse > main > section > h2 {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+    .aboutCollapse > main > div {
+        top: 10px;
+        right: 30px;
+    }
+    .aboutCollapse > main > div > svg{
+        width: 23px;
+        height: 28px;
+    }
+    .aboutCollapse > main > article {
+        width: 100%;
+        font-size: 24px;
+        height: auto;
+        margin: 0 auto 0 auto;
+        padding: 15px 10px 3px 10px;
+    }
+    .flatCollapse {
+        width: 582px;
+        height: 52px;
+        border-radius: 10px;
+    }
+    .flatCollapse > main {
+        width: 585px;
+    }
+    .flatCollapse > main > article {
+        width: 582px;
+        height: auto;
+    }
+    .flatCollapse > main > article > ul > li {
+        padding: 17px 10px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+
+
+
+}

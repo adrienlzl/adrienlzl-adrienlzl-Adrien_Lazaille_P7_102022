@@ -14,7 +14,7 @@ import Error from "./pages/Error";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<RouteLayout />} >
+        <Route path="/" element={<RouteLayout />} errorElement={<Error/>}>
           <Route index element={<Home />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/card/:id' element={<Flat />}/>

@@ -25,8 +25,8 @@ function Header() {
                     </g>
                     <defs>
                         <filter id="filter0_d_8_10" x="0" y="0" width="218.322" height="76" filterUnits="userSpaceOnUse"
-                                color-interpolation-filters="sRGB">
-                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                colorInterpolationFilters="sRGB">
+                            <feFlood floodOpacity="0" result="BackgroundImageFix"/>
                             <feColorMatrix in="SourceAlpha" type="matrix"
                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                             <feOffset dy="4"/>

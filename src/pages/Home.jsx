@@ -14,7 +14,7 @@ function Home() {
             </header>
             <section className="sectionHome">
                 {datas.map(data => (
-                    <HomeDatas data={data} />
+                    <HomeDatas data={data} key={data.id} />
                 ))}
             </section>
             <Footer/>
