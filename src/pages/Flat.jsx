@@ -8,6 +8,7 @@ import ImgHost from "../components/ImgHost";
 import ImageSlider from "../components/ImageSlider"
 import Collapse from "../components/Collapse ";
 import SimpleImage from "../components/SimpleImage";
+import StarsCalculator from "../components/StarsCalculator";
 
 function Flat() {
 
@@ -64,7 +65,7 @@ function Flat() {
                         </div>
                     </div>
                     <div className="ratingStars">
-                        <Stars data={parsedStarts} />
+                        <StarsCalculator data={parsedStarts} />
                     </div>
                 </div>
             </section>

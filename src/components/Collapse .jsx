@@ -9,6 +9,7 @@ const Collapse = (props) => {
     };
 const StuffLenght = props.data.text.length
 
+
     if (StuffLenght > 20 ) {
         return (
             <>
